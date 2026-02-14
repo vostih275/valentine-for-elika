@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 // Endpoint to get a random Valentine combo
 app.get("/valentine", (req, res) => {
-  const data = JSON.parse(fs.readFileSync("data.json"));
+  const data = JSON.parse(fs.readFileSync(path.join(__dirname, "public", "data.json")));
   
   // Random message
   const message = data.valentineMessages[Math.floor(Math.random() * data.valentineMessages.length)];
