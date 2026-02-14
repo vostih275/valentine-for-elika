@@ -26,7 +26,7 @@ app.get("/valentine", (req, res) => {
 });
 
 if (require.main === module) {
-  app.listen(process.env.PORT || 3002, () => console.log("Valentine server running on port " + (process.env.PORT || 3002)));
+  app.listen(process.env.PORT || 3002, '0.0.0.0', () => console.log("Valentine server running on port " + (process.env.PORT || 3002)));
 }
 
 module.exports = app;
