@@ -25,4 +25,4 @@ app.get("/valentine", (req, res) => {
   res.json({ message, secret, mediaType, mediaSrc });
 });
 
-app.listen(process.env.PORT || 3002, () => console.log("Valentine server running on port " + (process.env.PORT || 3002)));
+module.exports = app;
