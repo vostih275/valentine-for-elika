@@ -1,0 +1,15 @@
+{
+  "name": "valentine-for-elika",
+  "version": "1.0.0",
+  "description": "Interactive Valentine's page for Elika",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["valentine", "express", "node"],
+  "author": "",
+  "license": "ISC"
+}
